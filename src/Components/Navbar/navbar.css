@@ -1,3 +1,5 @@
+@import url('./_responsive.css');
+
 :root {
                   --primary: #62BE12;
                   --primary1: #347720;
@@ -7,7 +9,7 @@
 .navbar .navbar-brand{
                   color: black;
 font-size: 24px;
-font-family: Manrope;
+font-family: 'Manrope';
 font-weight: 700;
 line-height: 24px;
 word-wrap: break-word
@@ -19,7 +21,7 @@ word-wrap: break-word
                   border: 1px solid var(--primary);
                   color: var(--primary);
 font-size: 16px;
-font-family: Manrope;
+font-family: 'Manrope';
 font-weight: 700;
 text-transform: capitalize;
 
@@ -28,7 +30,7 @@ text-transform: capitalize;
                   background-color: var(--primary);
                   color: white;
 font-size: 16px;
-font-family: Manrope;
+font-family: 'Manrope';
 font-weight: 700;
 text-transform: capitalize;
 line-height: 12px;

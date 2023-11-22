@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px){   
+    .validation .validate-email {
+        width: 90% !important;
+    }
+
+    .validate-email .email-image > img {
+        width: 90px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 470px){   
+    .validate-email .email-content {
+        width: 50% !important;
+        text-align: center;
+        margin-inline: 135px;
+    }
+
+    .validate-email .email-image > img {
+        width: 70px;
+        height: auto;
+    }
+}

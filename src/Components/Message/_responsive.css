@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px){   
+    .message .message-popup {
+        width: 90% !important;
+    }
+
+    .message-popup .message-image > img {
+        width: 90px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 470px){   
+    .message-popup .message-content {
+        width: 50% !important;
+        text-align: center;
+        margin-inline: 135px;
+    }
+
+    .message-email .message-image > img {
+        width: 70px;
+        height: auto;
+    }
+}
