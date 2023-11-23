@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Validation from "./Components/Validation/Validation";
-
 import Message from "./Components/Message/Message";
 import Welcome from "./Components/Welcome/welcome";
 import ConfirmPass from "./Components/ConfirmPass/ConfirmPass";
@@ -17,8 +16,16 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/validation" element={<Validation />} />
-          <Route path="/validation/message" element={<Message />} />
+          <Route path="/signup/firstname" element={<FirstName />} />
+          <Route path="/signup/confirmpassword" element={<ConfirmPass />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signin/info" element={<Personalinfo />} />
+          <Route path="/forgetpassword" element={<ForgetPassword />} />
+
+          {/* 
+            <Route path="/validation" element={<Validation />} />
+            <Route path="/validation/message" element={<Message />} />
+          */}
         </Routes>
       </Router>
     </>

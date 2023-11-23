@@ -68,7 +68,7 @@ function Welcome() {
                 </div>
             </form>
           </div>
-          <Button text="Continue" link="#"/>
+          <Button text="Continue" link="/signin"/>
         </div>
       </div>
     </div>

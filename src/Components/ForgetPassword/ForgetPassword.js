@@ -35,7 +35,7 @@ function ForgetPassword() {
                     Enter your mail address <br />
                   </h5>
 
-                  <form onSubmit={handleDate}>
+                  <form onSubmit={handleDate} onClick={() => document.getElementById('form-btn').style.background = '#62BE12'}>
                     <div class="form-floating mb-3 mt-4">
                       <input
                         type="email"
@@ -53,6 +53,8 @@ function ForgetPassword() {
 
                     <div class="d-grid mt-4">
                       <button
+                        id="form-btn"
+                        style={{background: '#d5fbb5'}}
                         class="btn  btn-login text-uppercase fw-bold"
                         type="submit"
                       >

@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
-import image1 from "../assest/images/Social icon-1.png";
-import image2 from "../assest/images/Social icon-2.png";
-import image3 from "../assest/images/Social icon-3.png";
-import image4 from "../assest/images/Eye Closed.png";
-import image5 from "../assest/images/Eye.png";
 
 function FirstName() {
   const [firstname, setfirstname] = useState(" ");
   const [lastname, setlastname] = useState(" ");
   const [showPassword, setShowPassword] = useState(false);
+
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+
   function handleDate(e) {
     e.preventDefault();
 
@@ -43,7 +40,7 @@ function FirstName() {
                     <br />
                   </h5>
 
-                  <form onSubmit={handleDate}>
+                  <form onSubmit={handleDate} onClick={() => document.getElementById('form-btn').style.background = '#62BE12'}>
                     <div class="form-floating mb-3 mt-4">
                       <input
                         type="text"
@@ -73,6 +70,8 @@ function FirstName() {
 
                     <div class="d-grid mt-4">
                       <button
+                        id="form-btn"
+                        style={{background: '#d5fbb5'}}
                         class="btn  btn-login text-uppercase fw-bold"
                         type="submit"
                       >
