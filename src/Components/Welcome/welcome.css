@@ -117,8 +117,8 @@
     content: '';
     position: absolute;
     left: 4px;
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -129,13 +129,13 @@
     content: '';
     position: absolute;
     left: 0;
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     background-color: white;
-    border: 2px solid #62BE12;
+    border: 1.5px solid #62BE12;
 }
 
 .welcome-list-items .welcome-user .user-switch .radio-title {
