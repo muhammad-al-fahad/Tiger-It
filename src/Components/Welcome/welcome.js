@@ -19,7 +19,7 @@ function Welcome() {
     {/* Welcome Section */}
       <div className='welcome-items'>
         <div className='welcome-close'>
-          <img src="" alt="" />userType
+          <img src="" alt="" />
         </div>
         <div className='welcome-content'>
           <div className='welcome-list'>
