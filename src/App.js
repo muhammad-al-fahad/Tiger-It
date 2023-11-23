@@ -22,10 +22,10 @@ function App() {
           <Route path="/signin/info" element={<Personalinfo />} />
           <Route path="/forgetpassword" element={<ForgetPassword />} />
 
-          {/* 
-            <Route path="/validation" element={<Validation />} />
-            <Route path="/validation/message" element={<Message />} />
-          */}
+          
+            <Route path="/check/email" element={<Validation />} />
+            <Route path="/message" element={<Message />} />
+          
         </Routes>
       </Router>
     </>
