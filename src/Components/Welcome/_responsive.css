@@ -12,7 +12,7 @@
     }
 
     .welcome-list .welcome-list-items {
-        width: 80%;
+        width: 73% !important;
         text-align: center;
         margin-inline: 70px;
     }
@@ -26,7 +26,7 @@
     }
 
     .welcome-list .welcome-list-items {
-        width: 48%;
+        width: 48% !important;
         text-align: center;
         margin-inline: 140px;
     }

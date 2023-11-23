@@ -6,10 +6,19 @@ function Welcome() {
 
     function handleColor(e) {
         const user = document.querySelectorAll('.welcome-user');
-        console.log(e.target.form[0].className)
+
         if(e.target.value === 'on') {
             user.forEach((bc, index) => {
-                if(index === e.target.form[index].className) bc.style.borderColor = '#62BE12';
+                if(e.target.className === "radio-deliver") {
+                    if(index === 2) bc.style.borderColor = '#62BE12';
+                    else bc.style.borderColor = '#EBEDF0';
+                } else if (e.target.className === "radio-sell") {
+                    if(index === 1) bc.style.borderColor = '#62BE12';
+                    else bc.style.borderColor = '#EBEDF0';
+                } else {
+                    if(index === 0) bc.style.borderColor = '#62BE12';
+                    else bc.style.borderColor = '#EBEDF0';
+                }
             })
         }
     }
@@ -19,7 +28,7 @@ function Welcome() {
     {/* Welcome Section */}
       <div className='welcome-items'>
         <div className='welcome-close'>
-          <img src="" alt="" />userType
+          <img src="" alt="" />
         </div>
         <div className='welcome-content'>
           <div className='welcome-list'>
@@ -30,7 +39,7 @@ function Welcome() {
             <form className='welcome-list-items'>
                 <div className='welcome-user'>
                     <label className='user-switch'>
-                        <input className='radio-button' type='radio' name='userType' onChange={handleColor}/>
+                        <input className='radio-buy' type='radio' name='userType' onChange={handleColor}/>
                         <div className='radio-title'>
                             <h5 className='title-h5'>I'm here to shop! 🛍️</h5>
                             <p className='title-p'>Explore products and make purchases.</p>
@@ -40,7 +49,7 @@ function Welcome() {
 
                 <div className='welcome-user'>
                     <label className='user-switch'>
-                        <input className='radio-button' type='radio' name='userType' onChange={handleColor}/>
+                        <input className='radio-sell' type='radio' name='userType' onChange={handleColor}/>
                         <div className='radio-title'>
                             <h5 className='title-h5'>I'm here to sell! 💼</h5>
                             <p className='title-p'>List, manage your products with ease.</p>
@@ -50,7 +59,7 @@ function Welcome() {
 
                 <div className='welcome-user'>
                     <label className='user-switch'>
-                        <input className='radio-button' type='radio' name='userType' onChange={handleColor}/>
+                        <input className='radio-deliver' type='radio' name='userType' onChange={handleColor}/>
                         <div className='radio-title'>
                             <h5 className='title-h5'>I'm here to deliver! 🚚</h5>
                             <p className='title-p'>Become a rider and help with deliveries.</p>
