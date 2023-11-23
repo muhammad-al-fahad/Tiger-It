@@ -7,7 +7,7 @@ import image3 from "../assest/images/Social icon-3.png";
 import image4 from "../assest/images/Eye Closed.png";
 import image5 from "../assest/images/Eye.png";
 
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function SignIn() {
   const [email, setemail] = useState(" ");
@@ -46,13 +46,20 @@ function SignIn() {
                     Welcome ! <br />
                   </h5>
                   <p className="login-dcs">Signup or login in to continue</p>
-                  <form onSubmit={handleDate} onClick={() => document.getElementById('form-btn').style.background = '#62BE12'}>
+                  <form
+                    onSubmit={handleDate}
+                    onClick={() =>
+                      (document.getElementById("form-btn").style.background =
+                        "#62BE12")
+                    }
+                  >
                     <div class="form-floating mb-3 mt-4">
                       <input
                         type="email"
                         class="form-control"
                         id="floatingInput"
                         placeholder="name@example.com"
+                        required
                         onChange={(e) => setemail(e.target.value)}
                       />
                       <label for="floatingInput" className="inputs">
@@ -67,7 +74,6 @@ function SignIn() {
                         className="form-control"
                         id="floatingPassword"
                         placeholder="Password"
-                        
                         onChange={(e) => setPassword(e.target.value)}
                       />
                       <label htmlFor="floatingPassword" className="inputs">
@@ -90,26 +96,15 @@ function SignIn() {
                         )}
                       </div>
                     </div>
-                    {/* <div class="form-floating mb-3 mt-4">
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="floatingPassword"
-                        placeholder="Password"
-                        onChange={(e) => setpassword(e.target.value)}
-                      />
-                      <label for="floatingPassword" className="inputs">
-                        {" "}
-                        Enter password
-                      </label>
-                    </div> */}
+
                     <div className="forget-pass">
-                      <a href="/">? Forget Password </a>
+                      <Link to="/forgetpassword">? Forget Password </Link>
                     </div>
 
                     <div class="d-grid mt-4">
                       <button
-                        id="form-btn" style={{background: '#d5fbb5'}}
+                        id="form-btn"
+                        style={{ background: "#d5fbb5" }}
                         class="btn  btn-login text-uppercase fw-bold"
                         type="submit"
                       >

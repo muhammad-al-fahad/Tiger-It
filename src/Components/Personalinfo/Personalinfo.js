@@ -42,13 +42,21 @@ function Personalinfo() {
                     <br />
                   </h5>
 
-                  <form id="form" onSubmit={handleDate} onClick={() => document.getElementById('form-btn').style.background = '#62BE12'}>
+                  <form
+                    id="form"
+                    onSubmit={handleDate}
+                    onClick={() =>
+                      (document.getElementById("form-btn").style.background =
+                        "#62BE12")
+                    }
+                  >
                     <div class="form-floating mb-3 mt-4">
                       <input
                         type="text"
                         class="form-control"
                         id="floatingInput"
                         placeholder="name@example.com"
+                        required
                         onChange={(e) => setAddress1(e.target.value)}
                       />
                       <label for="floatingInput" className="inputs">
@@ -62,6 +70,7 @@ function Personalinfo() {
                         class="form-control"
                         id="floatingInput"
                         placeholder="name@example.com"
+                        required
                         onChange={(e) => setStreetName(e.target.value)}
                       />
                       <label for="floatingInput" className="inputs">
@@ -130,6 +139,7 @@ function Personalinfo() {
                         class="form-control"
                         id="floatingInput"
                         placeholder="name@example.com"
+                        required
                         onChange={(e) => setPostalcode(e.target.value)}
                       />
                       <label for="floatingInput" className="inputs">
@@ -140,8 +150,8 @@ function Personalinfo() {
                     <div className="d-grid mt-4">
                       <button
                         id="form-btn"
-                        style={{background: '#d5fbb5'}}
-                        className={'btn btn-login text-uppercase fw-bold'}
+                        style={{ background: "#d5fbb5" }}
+                        className={"btn btn-login text-uppercase fw-bold"}
                         type="submit"
                       >
                         Continue
