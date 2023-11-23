@@ -39,7 +39,7 @@ function ConfirmPass() {
                     Create Password <br />
                   </h5>
 
-                  <form onSubmit={handleDate}>
+                  <form onSubmit={handleDate} onClick={() => document.getElementById('form-btn').style.background = '#62BE12'}>
                     <div className="form-floating mb-3 mt-4">
                       <input
                         type={showPassword ? "text" : "password"}
@@ -99,6 +99,8 @@ function ConfirmPass() {
 
                     <div class="d-grid mt-4">
                       <button
+                        id="form-btn"
+                        style={{background: '#d5fbb5'}}
                         class="btn  btn-login text-uppercase fw-bold"
                         type="submit"
                       >

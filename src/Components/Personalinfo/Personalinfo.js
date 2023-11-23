@@ -7,7 +7,7 @@ function Personalinfo() {
   const [postalcode, setPostalcode] = useState(" ");
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
-  const [buttonColor, setButtonColor] = useState("#F22C21"); // Initial color
+
   function handleDate(e) {
     e.preventDefault();
 
@@ -28,10 +28,7 @@ function Personalinfo() {
         console.log(error);
       });
   }
-  const handleFormClick = () => {
-    // Change button color to green on form click
-    setButtonColor("#F22C21");
-  };
+
   return (
     <>
       <section className="UserLogin ">
@@ -45,7 +42,7 @@ function Personalinfo() {
                     <br />
                   </h5>
 
-                  <form onSubmit={handleDate} onClick={handleFormClick}>
+                  <form id="form" onSubmit={handleDate} onClick={() => document.getElementById('form-btn').style.background = '#62BE12'}>
                     <div class="form-floating mb-3 mt-4">
                       <input
                         type="text"
@@ -142,7 +139,9 @@ function Personalinfo() {
                     </div>
                     <div className="d-grid mt-4">
                       <button
-                        className={`btn btn-login text-uppercase fw-bold btn-${buttonColor}`}
+                        id="form-btn"
+                        style={{background: '#d5fbb5'}}
+                        className={'btn btn-login text-uppercase fw-bold'}
                         type="submit"
                       >
                         Continue
