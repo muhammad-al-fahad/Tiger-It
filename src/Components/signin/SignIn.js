@@ -6,6 +6,7 @@ import image2 from "../assest/images/Social icon-2.png";
 import image3 from "../assest/images/Social icon-3.png";
 import image4 from "../assest/images/Eye Closed.png";
 import image5 from "../assest/images/Eye.png";
+import { Link } from "react-router-dom";
 
 // import { Link } from "react-router-dom";
 
@@ -53,6 +54,7 @@ function SignIn() {
                         class="form-control"
                         id="floatingInput"
                         placeholder="name@example.com"
+                        required
                         onChange={(e) => setemail(e.target.value)}
                       />
                       <label for="floatingInput" className="inputs">
@@ -67,7 +69,6 @@ function SignIn() {
                         className="form-control"
                         id="floatingPassword"
                         placeholder="Password"
-                        
                         onChange={(e) => setPassword(e.target.value)}
                       />
                       <label htmlFor="floatingPassword" className="inputs">
@@ -104,7 +105,7 @@ function SignIn() {
                       </label>
                     </div> */}
                     <div className="forget-pass">
-                      <a href="/">? Forget Password </a>
+                      <Link to="/forgetpassword">? Forget Password </Link>
                     </div>
 
                     <div class="d-grid mt-4">

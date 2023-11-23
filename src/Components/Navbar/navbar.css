@@ -23,16 +23,15 @@ word-wrap: break-word
 font-size: 16px;
 font-family: 'Manrope';
 font-weight: 700;
-text-transform: capitalize;
+/* text-transform: capitalize; */
 
 }
-.navbar .login-btn {
+.navbar .user-login-btn {
                   background-color: var(--primary);
                   color: white;
 font-size: 16px;
 font-family: 'Manrope';
 font-weight: 700;
-text-transform: capitalize;
-line-height: 12px;
-word-wrap: break-word
+/* text-transform: capitalize; */
+
 }

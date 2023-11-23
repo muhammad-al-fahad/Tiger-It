@@ -17,8 +17,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/validation" element={<Validation />} />
-          <Route path="/validation/message" element={<Message />} />
+          <Route path="/login" element={<SignIn />} />
+          <Route path="/forgetpassword" element={<ForgetPassword />} />
+          {/* <Route path="/validation" element={<Validation />} /> */}
+          {/* <Route path="/validation/message" element={<Message />} /> */}
         </Routes>
       </Router>
     </>

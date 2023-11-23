@@ -56,7 +56,7 @@ function ForgetPassword() {
                         class="btn  btn-login text-uppercase fw-bold"
                         type="submit"
                       >
-                        Sign in
+                        login
                       </button>
                       <div className="login-with mx-auto">
                         <span class="d-block text-left my-4 text-muted fw-bold">
