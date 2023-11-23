@@ -14,7 +14,7 @@ function Welcome() {
                 radio.setAttribute('checked', 'true');
             }
         })
-    }, [window.onload])
+    }, [])
 
     function handleColor(e) {
         const user = document.querySelectorAll('.welcome-user');
