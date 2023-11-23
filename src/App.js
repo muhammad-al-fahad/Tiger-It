@@ -8,6 +8,8 @@ import ForgetPassword from "./Components/ForgetPassword/ForgetPassword";
 import Navbar from "./Components/Navbar/Navbar";
 import Personalinfo from "./Components/Personalinfo/Personalinfo";
 import SignIn from "./Components/signin/SignIn";
+import Otp from "./Components/Otp/Otp";
+import TigerOtp from "./Components/TigerOtp/TigerOtp";
 
 function App() {
   return (
@@ -19,12 +21,21 @@ function App() {
           <Route path="/signup/firstname" element={<FirstName />} />
           <Route path="/signup/confirmpassword" element={<ConfirmPass />} />
           <Route path="/login" element={<SignIn />} />
+<<<<<<< HEAD
           <Route path="/signin/info" element={<Personalinfo />} />
           <Route path="/forgetpassword" element={<ForgetPassword />} />
           {/* 
             <Route path="/validation" element={<Validation />} />
             <Route path="/validation/message" element={<Message />} />
           */}
+=======
+          <Route path="/signup/user/info" element={<Personalinfo />} />
+          <Route path="/forgetpassword" element={<ForgetPassword />} />
+          <Route path="/otp" element={<TigerOtp />} />
+
+          <Route path="/check/email" element={<Validation />} />
+          <Route path="/validation/message" element={<Message />} />
+>>>>>>> auth-by-zohaib
         </Routes>
       </Router>
     </>

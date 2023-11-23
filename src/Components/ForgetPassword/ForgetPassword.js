@@ -3,6 +3,7 @@ import axios from "axios";
 import image1 from "../assest/images/Social icon-1.png";
 import image2 from "../assest/images/Social icon-2.png";
 import image3 from "../assest/images/Social icon-3.png";
+import { Link } from "react-router-dom";
 
 function ForgetPassword() {
   const [email, setemail] = useState(" ");
@@ -35,7 +36,13 @@ function ForgetPassword() {
                     Enter your mail address <br />
                   </h5>
 
-                  <form onSubmit={handleDate} onClick={() => document.getElementById('form-btn').style.background = '#62BE12'}>
+                  <form
+                    onSubmit={handleDate}
+                    onClick={() =>
+                      (document.getElementById("form-btn").style.background =
+                        "#62BE12")
+                    }
+                  >
                     <div class="form-floating mb-3 mt-4">
                       <input
                         type="email"
@@ -51,6 +58,7 @@ function ForgetPassword() {
                     </div>
                     {/* ################## show password ##################### */}
 
+<<<<<<< HEAD
                     <div class="d-grid mt-4">
                       <button
                         id="form-btn"
@@ -60,6 +68,21 @@ function ForgetPassword() {
                       >
                         login
                       </button>
+=======
+                    <Link to="/otp" className="text-decoration-none">
+                      <div class="d-grid mt-4">
+                        <button
+                          id="form-btn"
+                          style={{ background: "#d5fbb5" }}
+                          class="btn  btn-login text-uppercase fw-bold"
+                          type="submit"
+                        >
+                          Sign in
+                        </button>
+                      </div>
+                    </Link>
+                    <div className="d-grid">
+>>>>>>> auth-by-zohaib
                       <div className="login-with mx-auto">
                         <span class="d-block text-left my-4 text-muted fw-bold">
                           &mdash;&mdash;&mdash;&mdash; or log in with

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function FirstName() {
   const [firstname, setfirstname] = useState(" ");
@@ -40,12 +41,19 @@ function FirstName() {
                     <br />
                   </h5>
 
-                  <form onSubmit={handleDate} onClick={() => document.getElementById('form-btn').style.background = '#62BE12'}>
+                  <form
+                    onSubmit={handleDate}
+                    onClick={() =>
+                      (document.getElementById("form-btn").style.background =
+                        "#62BE12")
+                    }
+                  >
                     <div class="form-floating mb-3 mt-4">
                       <input
                         type="text"
                         class="form-control"
                         id="floatingInput"
+                        required
                         placeholder="name@example.com"
                         onChange={(e) => setfirstname(e.target.value)}
                       />
@@ -59,6 +67,7 @@ function FirstName() {
                         type="text"
                         class="form-control"
                         id="floatingInput"
+                        required
                         placeholder="name@example.com"
                         onChange={(e) => setlastname(e.target.value)}
                       />
@@ -68,16 +77,21 @@ function FirstName() {
                       </label>
                     </div>
 
-                    <div class="d-grid mt-4">
-                      <button
-                        id="form-btn"
-                        style={{background: '#d5fbb5'}}
-                        class="btn  btn-login text-uppercase fw-bold"
-                        type="submit"
-                      >
-                        Continue
-                      </button>
-                    </div>
+                    <Link
+                      to="/signup/user/info"
+                      className="text-decoration-none"
+                    >
+                      <div class="d-grid mt-4 ">
+                        <button
+                          id="form-btn"
+                          style={{ background: "#d5fbb5" }}
+                          class="btn  btn-login  text-decoration-none fw-bold"
+                          type="submit"
+                        >
+                          Continue
+                        </button>
+                      </div>
+                    </Link>
                   </form>
                 </div>
               </div>
