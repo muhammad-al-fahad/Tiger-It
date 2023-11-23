@@ -1,24 +1,36 @@
-import React from 'react'
+import {useEffect} from 'react'
 import Button from '../Button/Button'
 import './welcome.css'
 
-function Welcome() {
+function Welcome() {   
+
+    useEffect(() => {
+        const user = document.querySelectorAll('.welcome-user');
+        const radio = document.querySelector('.radio-buy');
+
+        user.forEach((bc, index) => {
+            if(index === 0) { 
+                bc.style.borderColor = '#62BE12'
+                radio.setAttribute('checked', 'true');
+            }
+        })
+    }, [window.onload])
 
     function handleColor(e) {
         const user = document.querySelectorAll('.welcome-user');
 
         if(e.target.value === 'on') {
             user.forEach((bc, index) => {
-                if(e.target.className === "radio-deliver") {
-                    if(index === 2) bc.style.borderColor = '#62BE12';
-                    else bc.style.borderColor = '#EBEDF0';
-                } else if (e.target.className === "radio-sell") {
-                    if(index === 1) bc.style.borderColor = '#62BE12';
-                    else bc.style.borderColor = '#EBEDF0';
-                } else {
-                    if(index === 0) bc.style.borderColor = '#62BE12';
-                    else bc.style.borderColor = '#EBEDF0';
-                }
+                switch (e.target.className) {
+                    case "radio-deliver":
+                        bc.style.borderColor = (index === 2) ? '#62BE12' : '#EBEDF0';
+                        break;
+                    case "radio-sell":
+                        bc.style.borderColor = (index === 1) ? '#62BE12' : '#EBEDF0';
+                        break;
+                    default:
+                        bc.style.borderColor = (index === 0) ? '#62BE12' : '#EBEDF0';
+                }               
             })
         }
     }
@@ -39,7 +51,7 @@ function Welcome() {
             <form className='welcome-list-items'>
                 <div className='welcome-user'>
                     <label className='user-switch'>
-                        <input className='radio-buy' type='radio' name='userType' onChange={handleColor}/>
+                        <input className='radio-buy' type='radio' name='userType' onChange={handleColor} />
                         <div className='radio-title'>
                             <h5 className='title-h5'>I'm here to shop! 🛍️</h5>
                             <p className='title-p'>Explore products and make purchases.</p>
