@@ -1,4 +1,5 @@
 import "./App.css";
+import ConfirmPass from "./Components/ConfirmPass/ConfirmPass";
 import FirstName from "./Components/FirstName/FirstName";
 import ForgetPassword from "./Components/ForgetPassword/ForgetPassword";
 import Navbar from "./Components/Navbar/Navbar";
@@ -10,9 +11,10 @@ function App() {
     <>
       <Navbar />
       {/* <SignIn /> */}
-      {/* <ForgetPassword /> */}
+      <ForgetPassword />
       {/* <FirstName /> */}
-      <Personalinfo />
+      {/* <Personalinfo /> */}
+      <ConfirmPass />
     </>
   );
 }
