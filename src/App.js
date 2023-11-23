@@ -11,7 +11,7 @@ function App() {
     <>
       <Navbar />
       {/* <SignIn /> */}
-      <ForgetPassword />
+      {/* <ForgetPassword /> */}
       {/* <FirstName /> */}
       {/* <Personalinfo /> */}
       <ConfirmPass />
