@@ -58,17 +58,6 @@ function ForgetPassword() {
                     </div>
                     {/* ################## show password ##################### */}
 
-<<<<<<< HEAD
-                    <div class="d-grid mt-4">
-                      <button
-                        id="form-btn"
-                        style={{background: '#d5fbb5'}}
-                        class="btn  btn-login text-uppercase fw-bold"
-                        type="submit"
-                      >
-                        login
-                      </button>
-=======
                     <Link to="/otp" className="text-decoration-none">
                       <div class="d-grid mt-4">
                         <button
@@ -82,7 +71,6 @@ function ForgetPassword() {
                       </div>
                     </Link>
                     <div className="d-grid">
->>>>>>> auth-by-zohaib
                       <div className="login-with mx-auto">
                         <span class="d-block text-left my-4 text-muted fw-bold">
                           &mdash;&mdash;&mdash;&mdash; or log in with

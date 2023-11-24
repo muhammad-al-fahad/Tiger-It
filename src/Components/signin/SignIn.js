@@ -8,7 +8,7 @@ import image4 from "../assest/images/Eye Closed.png";
 import image5 from "../assest/images/Eye.png";
 import { Link } from "react-router-dom";
 
-import { Link } from "react-router-dom";
+
 
 function SignIn() {
   const [email, setemail] = useState(" ");

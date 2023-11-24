@@ -23,16 +23,11 @@ function App() {
           <Route path="/login" element={<SignIn />} />
           <Route path="/signin/info" element={<Personalinfo />} />
           <Route path="/forgetpassword" element={<ForgetPassword />} />
-          {/* 
-            <Route path="/validation" element={<Validation />} />
-            <Route path="/validation/message" element={<Message />} />
-          */}
-          <Route path="/signup/user/info" element={<Personalinfo />} />
-          <Route path="/forgetpassword" element={<ForgetPassword />} />
-          <Route path="/otp" element={<TigerOtp />} />
 
-          <Route path="/check/email" element={<Validation />} />
-          <Route path="/validation/message" element={<Message />} />
+          
+            <Route path="/check/email" element={<Validation />} />
+            <Route path="/message" element={<Message />} />
+          
         </Routes>
       </Router>
     </>
