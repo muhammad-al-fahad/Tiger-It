@@ -102,3 +102,9 @@ word-wrap: break-word
                  color: var(--primary1);
 
 }
+
+@media screen and (max-width: 335px){
+    .social-login button {
+        width: 4rem;
+    }
+}
