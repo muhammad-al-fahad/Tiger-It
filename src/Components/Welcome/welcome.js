@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Button from "../Button/Button";
 import "./welcome.css";
-import { Link } from "react-router-dom";
 
 function Welcome() {
   useEffect(() => {
