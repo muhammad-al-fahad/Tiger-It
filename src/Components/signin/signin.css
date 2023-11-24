@@ -103,8 +103,28 @@ word-wrap: break-word
 
 }
 
+@media screen and (max-width: 992px){
+    .social-login button {
+        width: 3rem;
+    }
+
+    .login-with span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .social-login button {
+        width: 5rem;
+    }
+
+    .login-with span {
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 335px){
     .social-login button {
-        width: 4rem;
+        width: 4rem !important;
     }
 }

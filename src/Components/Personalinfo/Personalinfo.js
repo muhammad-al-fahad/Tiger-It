@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from 'react-router-dom';
 
 function Personalinfo() {
   const [address1, setAddress1] = useState(" ");
@@ -148,14 +149,18 @@ function Personalinfo() {
                       </label>
                     </div>
                     <div className="d-grid mt-4">
-                      <button
-                        id="form-btn"
-                        style={{ background: "#d5fbb5" }}
-                        className={"btn btn-login text-uppercase fw-bold"}
-                        type="submit"
-                      >
-                        Continue
-                      </button>
+                      <Link to='/signup/confirmpassword' className="text-decoration-none">
+                        <div className="d-grid mt-4">
+                          <button
+                            id="form-btn"
+                            style={{ background: "#d5fbb5" }}
+                            className={"btn btn-login text-uppercase fw-bold"}
+                            type="submit"
+                          >
+                            Continue
+                          </button>
+                        </div>
+                      </Link>
                     </div>
                   </form>
                 </div>
