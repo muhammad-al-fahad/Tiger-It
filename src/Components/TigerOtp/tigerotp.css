@@ -1,59 +1,97 @@
 .past-code-button button{
-                  border: 0px;
-                  background: transparent;
-                  color: #62BE12;
-                  direction: rtl;
-                  margin-left: 30px;
+    border: 0px;
+    background: transparent;
+    color: #62BE12;
+    direction: rtl;
+    margin-left: 30px;
 }
+
 .past-code-button {
-                  border: 0px;
-                  background: transparent;
-                  color: #62BE12;
-                  direction: rtl;
-                  margin-right:50px;
-font-family: Manrope;
-font-weight: 700;
-
-
+    border: 0px;
+    background: transparent;
+    color: #62BE12;
+    direction: rtl;
+    margin-right:50px;
+    font-family: Manrope;
+    font-weight: 700;
 }
+
 .resend-otp-button button {
-                  border: 0px;
-                  background: transparent;
-                  color: #62BE12;
-                 justify-content: center;
-font-family: Manrope;
-font-weight: 700; 
+    border: 0px;
+    background: transparent;
+    color: #62BE12;
+    justify-content: center;
+    font-family: Manrope;
+    font-weight: 700; 
 }
 
 .otp-inputs input, optgroup, select, textarea {
-                  border-radius: 5px;
-                  background: #c1c1c1;
-                  border: 0px;
-                  color: #767C8C;
-                  font-family: Manrope;
-                  margin-left: 10px;
-                  margin-bottom: 10px;
-                  width: "3.5rem";
-                  height: "2.3rem";
-              }
-.otp-inputs input, optgroup, select, textarea {
-                  border-radius: 5px;
-                  background: #d6d9db;
-                  border: 0px;
-                  color: #767C8C;
-                  font-family: Manrope;
-                  margin-left: 10px;
-                  margin-bottom: 10px;
-                  width: "3.5rem";
-                   height: "2.3rem"
-              }
+    border-radius: 5px;
+    background: #c1c1c1;
+    border: 0px;
+    color: #767C8C;
+    font-family: Manrope;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: "3.5rem";
+    height: "2.3rem";
+}
 
-              @media (min-width: 393px) {
-                  
-                  .otp-inputs input, optgroup, select, textarea {
-                                    
-                                    width: 2rem;
-                                    height: 2rem;
-                                    
-                                }
-                }
+.otp-inputs input, optgroup, select, textarea {
+    border-radius: 5px;
+    background: #d6d9db;
+    border: 0px;
+    color: #767C8C;
+    font-family: Manrope;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: "3.5rem";
+    height: "2.3rem"
+}
+
+@media (max-width: 1200px) { 
+    .row .col-sm-9 .card .card-body form .otp-inputs div > .otp-input {
+        width: 2.2rem !important;
+        height: 2.2rem !important;
+    }
+    
+    .otp-inputs input, optgroup, select, textarea {
+        margin-left: 7px;
+    }
+}
+
+@media (max-width: 992px) { 
+    .row .col-sm-9 .card .card-body form .otp-inputs div > .otp-input {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
+    
+    .otp-inputs input, optgroup, select, textarea {
+        margin-left: 2px;
+    }
+}
+
+@media (max-width: 767px) { 
+    .row .col-sm-9 .card .card-body form .otp-inputs div > .otp-input {
+        width: 2.3rem !important;
+        height: 2.3rem !important;
+    }
+    
+    .otp-inputs input, optgroup, select, textarea {
+        margin-left: 6px;
+    }
+}
+
+@media (min-width: 393px) {   
+    .otp-inputs input, optgroup, select, textarea {                 
+        width: 2rem;
+        height: 2rem;  
+    }
+}
+
+@media (max-width: 350px) {   
+    .row .col-sm-9 .card .card-body form .otp-inputs div > .otp-input {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+}

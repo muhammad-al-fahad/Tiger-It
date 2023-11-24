@@ -22,13 +22,13 @@ function Welcome() {
       user.forEach((bc, index) => {
         switch (e.target.className) {
           case "radio-deliver":
-            bc.style.borderColor = (index === 2) ? "#62BE12" : "#EBEDF0";
+            bc.style.borderColor = index === 2 ? "#62BE12" : "#EBEDF0";
             break;
           case "radio-sell":
-            bc.style.borderColor = (index === 1) ? "#62BE12" : "#EBEDF0";
+            bc.style.borderColor = index === 1 ? "#62BE12" : "#EBEDF0";
             break;
           default:
-            bc.style.borderColor = (index === 0) ? "#62BE12" : "#EBEDF0";
+            bc.style.borderColor = index === 0 ? "#62BE12" : "#EBEDF0";
         }
       });
     }
