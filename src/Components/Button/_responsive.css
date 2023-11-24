@@ -1,0 +1,11 @@
+@media screen and (max-width: 650px){   
+    button.email-verify {
+        width: 400px !important;
+    }
+}
+
+@media screen and (max-width: 470px){   
+    button.email-verify {
+        width: 250px !important;
+    }
+}

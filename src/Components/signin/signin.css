@@ -1,0 +1,130 @@
+:root {
+                  --primary: #62BE12;
+                  --primary1: #347720;
+                  
+              }
+
+
+.UserLogin{
+                  background-color: #FFFFFF;
+}
+
+.tiger-card-title {
+                  color: black;
+font-size: 24px;
+font-family: Manrope;
+font-weight: 700;
+line-height: 24px;
+word-wrap: break-word
+}
+.login-dcs{
+                  color: #A8AEBF;
+font-size: 16px;
+font-family: Manrope;
+font-weight: 500;
+line-height: 24px;
+word-wrap: break-word
+}
+.login-with span {
+    color: #19191A;
+font-size: 16px;
+
+font-weight: 400;
+
+}
+ .UserLogin .inputs{
+    color: #767C8C;
+font-size: 16px;
+font-family: Manrope;
+font-weight: 500;
+line-height: 24px;
+word-wrap: break-word
+}
+
+.social-login button {
+    padding: 4px;
+    background: white;
+    border-radius: 8px;
+    border: 1px #D0D5DD solid;
+    width: 5rem;
+}
+.UserSignUp{
+                  background-color: #FFFFFF;
+}
+.ForgetPassword{
+                  background-color: #FFFFFF;
+}
+.otp{
+                  background-color: #FFFFFF;
+
+}
+.confirm-password{
+                  background-color: #FFFFFF;
+}
+.ana7r-logo img{
+                  width: 6rem;
+}
+.ana7r-card-title {
+                  font-size: 1.2rem;
+                  font-weight: 500;
+}
+.btn-login{
+                  background-color: var(--primary);
+                  color: white;
+                  font-size: 1.1rem;
+    
+}
+.btn-login:hover{
+                  background-color: var(--primary1);
+                  color: white;
+                  font-size: 1.1rem;
+                  border: 1px solid white;
+    
+}
+.term-and-condition a{
+                  text-decoration: none;
+}
+.forget-pass{
+                  direction: rtl;
+}
+.forget-pass a{
+                 text-decoration: none;
+                 color: var(--primary);
+font-size: 16px;
+font-family: Manrope;
+font-weight: 700;
+text-transform: capitalize;
+line-height: 12px;
+word-wrap: break-word
+}
+.forget-pass a:hover{
+               
+                 color: var(--primary1);
+
+}
+
+@media screen and (max-width: 992px){
+    .social-login button {
+        width: 3rem;
+    }
+
+    .login-with span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .social-login button {
+        width: 5rem;
+    }
+
+    .login-with span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 335px){
+    .social-login button {
+        width: 4rem !important;
+    }
+}
