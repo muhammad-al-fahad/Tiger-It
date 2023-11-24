@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import image4 from "../assest/images/Eye Closed.png";
 import image5 from "../assest/images/Eye.png";
+import { Link } from 'react-router-dom'
 
 function ConfirmPass() {
   const [password, setPassword] = useState(" ");
@@ -96,17 +97,19 @@ function ConfirmPass() {
                         )}
                       </div>
                     </div>
-
-                    <div class="d-grid mt-4">
-                      <button
-                        id="form-btn"
-                        style={{background: '#d5fbb5'}}
-                        class="btn  btn-login text-uppercase fw-bold"
-                        type="submit"
-                      >
-                        Create Account
-                      </button>
-                    </div>
+                    
+                    <Link to="/message" className="text-decoration-none">
+                      <div class="d-grid mt-4">
+                        <button
+                          id="form-btn"
+                          style={{background: '#d5fbb5'}}
+                          class="btn  btn-login text-uppercase fw-bold"
+                          type="submit"
+                        >
+                          Create Account
+                        </button>
+                      </div>
+                    </Link>
                   </form>
                 </div>
               </div>
