@@ -3,6 +3,7 @@ import OtpInput from "react-otp-input";
 import "./tigerotp.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
 function TigerOtp() {
   const [email, setemail] = useState(" ");
   const [password, setPassword] = useState(" ");
@@ -13,6 +14,7 @@ function TigerOtp() {
     // If validation is successful, proceed; otherwise, show an error message
     console.log("OTP is ", otp);
   };
+  
   function handleDate(e) {
     e.preventDefault();
 

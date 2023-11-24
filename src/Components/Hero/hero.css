@@ -1,0 +1,25 @@
+.hero-section {
+    height: 600px;
+    background-color: #053225;
+}
+
+.hero-section .hero-background-image {
+    width: auto;
+    height: 100%;
+}
+
+.hero-section .hero-background-image > img {
+    width: 397px;
+}
+
+.hero-section .hero-content {
+    width: 610px;
+    color: white;
+    margin-left: 100px;
+}
+
+.hero-section .row {
+    --bs-gutter-x: 7.5rem;
+    justify-content: space-around;
+    height: 600px;
+}
