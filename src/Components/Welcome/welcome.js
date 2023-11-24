@@ -17,18 +17,18 @@ function Welcome() {
 
   function handleColor(e) {
     const user = document.querySelectorAll(".welcome-user");
-    console.log(e.target.form[0].className);
+
     if (e.target.value === "on") {
       user.forEach((bc, index) => {
         switch (e.target.className) {
           case "radio-deliver":
-            bc.style.borderColor = index === 2 ? "#62BE12" : "#EBEDF0";
+            bc.style.borderColor = (index === 2) ? "#62BE12" : "#EBEDF0";
             break;
           case "radio-sell":
-            bc.style.borderColor = index === 1 ? "#62BE12" : "#EBEDF0";
+            bc.style.borderColor = (index === 1) ? "#62BE12" : "#EBEDF0";
             break;
           default:
-            bc.style.borderColor = index === 0 ? "#62BE12" : "#EBEDF0";
+            bc.style.borderColor = (index === 0) ? "#62BE12" : "#EBEDF0";
         }
       });
     }
@@ -72,7 +72,7 @@ function Welcome() {
               <div className="welcome-user">
                 <label className="user-switch">
                   <input
-                    className="radio-button"
+                    className="radio-sell"
                     type="radio"
                     name="userType"
                     onChange={handleColor}
@@ -89,7 +89,7 @@ function Welcome() {
               <div className="welcome-user">
                 <label className="user-switch">
                   <input
-                    className="radio-button"
+                    className="radio-deliver"
                     type="radio"
                     name="userType"
                     onChange={handleColor}
@@ -104,7 +104,7 @@ function Welcome() {
               </div>
             </form>
           </div>
-          <Button text="Continue" link="/signin" />
+          <Button text="Continue" link="/login" />
         </div>
       </div>
     </div>
