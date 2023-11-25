@@ -1,4 +1,3 @@
-import React from 'react'
 import Button from '../Button/Button'
 import './message.css'
 
@@ -18,7 +17,7 @@ function Message() {
             <h4 className='message-title'>Password Updated</h4>
             <p className='message-paragraph'>Your password has been changed successfully</p>
           </div>
-          <Button text="Login" link="#"/>
+          <Button text="Login" link="/home"/>
         </div>
       </div>
     </div>

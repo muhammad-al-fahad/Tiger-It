@@ -10,13 +10,13 @@ import Personalinfo from "./Components/Personalinfo/Personalinfo";
 import SignIn from "./Components/signin/SignIn";
 import Otp from "./Components/Otp/Otp";
 import TigerOtp from "./Components/TigerOtp/TigerOtp";
-import Hero from "./Components/Hero/Hero";
+import Home from "./Components/Home/Home";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
+      <Navbar />
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/signup/firstname" element={<FirstName />} />
@@ -28,7 +28,7 @@ function App() {
           
             <Route path="/check/email" element={<Validation />} />
             <Route path="/message" element={<Message />} />
-            <Route path="/home" element={<Hero />} />
+            <Route path="/home" element={<Home />} />
           
         </Routes>
       </Router>
