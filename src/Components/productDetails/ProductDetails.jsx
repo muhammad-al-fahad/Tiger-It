@@ -2,22 +2,26 @@ import React from 'react';
 import {
     Avatar,
     Badge,
+    Box,
     Button,
     Card,
     Divider,
     Flex,
+    Grid,
     Group,
     Image,
     Paper,
     Rating,
     SegmentedControl,
     Tabs,
-    Text
+    Text,
+    Title
 } from "@mantine/core";
 import mobilePics from "../../assets/Frame 1000001047.png"
 import mobile from "../../assets/Rectangle 24.png"
 import Specification from "./Specification";
 import {IconDiscountCheckFilled} from "@tabler/icons-react";
+import MobilePhoneInfoCard from "./MobilePhoneInfoCard";
 
 const ProductDetails = () => {
     return (
@@ -84,7 +88,7 @@ const ProductDetails = () => {
                 </Flex>
                 <Divider/>
                 <Flex direction="column" gap="lg">
-                    {[1, 2, 3, 4, 5, 6].map((v) => {
+                    {[1, 2, 3, 4, 5, 6].map((_) => {
                         return (
                             < >
                                 <Group>
@@ -108,6 +112,22 @@ const ProductDetails = () => {
                     <Button variant="outline" color="#62BE12" w="20%">view less</Button>
                 </Flex>
             </Flex>
+            <Divider/>
+            <Box my="xl">
+                <Title my="lg">More From Apple</Title>
+                <Grid>
+                    {[1, 2, 3, 4, 5, 6, 7].map((_) => {
+                        return <MobilePhoneInfoCard/>
+                    })}
+                </Grid>
+            </Box>
+            <Divider/>
+            <Title my="xl">Bestselling products</Title>
+            <Grid>
+                {[1, 2, 3, 4, 5].map((_) => {
+                    return <MobilePhoneInfoCard/>
+                })}
+            </Grid>
         </Paper>
     );
 };
