@@ -10,6 +10,7 @@ import Personalinfo from "./Components/Personalinfo/Personalinfo";
 import SignIn from "./Components/signin/SignIn";
 import Otp from "./Components/Otp/Otp";
 import TigerOtp from "./Components/TigerOtp/TigerOtp";
+import ProductCard from "./Components/ProductCard/ProductCard";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          {/* <Route path="/" element={<Welcome />} /> */}
+          <Route path="/" element={<ProductCard/>} />
           <Route path="/signup/firstname" element={<FirstName />} />
           <Route path="/signup/confirmpassword" element={<ConfirmPass />} />
           <Route path="/login" element={<SignIn />} />

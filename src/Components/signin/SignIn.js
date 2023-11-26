@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./signin.css";
+import { api_url } from "../../config";
 import image1 from "../assest/images/Social icon-1.png";
 import image2 from "../assest/images/Social icon-2.png";
 import image3 from "../assest/images/Social icon-3.png";
 import image4 from "../assest/images/Eye Closed.png";
 import image5 from "../assest/images/Eye.png";
 import { Link } from "react-router-dom";
-
-
 
 function SignIn() {
   const [email, setemail] = useState(" ");
@@ -17,7 +16,9 @@ function SignIn() {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
-  function handleDate(e) {
+
+  // login form submit event handler
+  const loginEmail = async (e) => {
     e.preventDefault();
 
     //  API post method
@@ -31,9 +32,10 @@ function SignIn() {
         console.log(response);
       })
       .catch((error) => {
+        alert("server error ");
         console.log(error);
       });
-  }
+  };
 
   return (
     <>
@@ -48,7 +50,7 @@ function SignIn() {
                   </h5>
                   <p className="login-dcs">Signup or login in to continue</p>
                   <form
-                    onSubmit={handleDate}
+                    onSubmit={loginEmail}
                     onClick={() =>
                       (document.getElementById("form-btn").style.background =
                         "#62BE12")
