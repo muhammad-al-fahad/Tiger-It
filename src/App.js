@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Router>
-      <Navbar />
+      
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/signup/firstname" element={<FirstName />} />
