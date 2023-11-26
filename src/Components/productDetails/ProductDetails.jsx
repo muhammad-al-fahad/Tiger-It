@@ -84,9 +84,9 @@ const ProductDetails = () => {
                 </Flex>
                 <Divider/>
                 <Flex direction="column" gap="lg">
-                    {Array.from({length: 8}).map((v) => {
+                    {[1, 2, 3, 4, 5, 6].map((v) => {
                         return (
-                            <>
+                            < >
                                 <Group>
                                     <Avatar src={null} alt="no image here"/>
                                     <Flex direction="column">
