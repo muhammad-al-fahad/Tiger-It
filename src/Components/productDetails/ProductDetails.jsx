@@ -15,6 +15,7 @@ import {
     Image,
     Paper,
     Rating,
+    ScrollArea,
     SegmentedControl,
     Tabs,
     Text,
@@ -35,6 +36,7 @@ import {useMediaQuery} from "@mantine/hooks";
 const ProductDetails = () => {
     const isMedium = useMediaQuery(`(max-width: ${em(992)})`)
     const isSmall = useMediaQuery(`(max-width: ${em(768)})`)
+    const isExtraSmall = useMediaQuery(`(max-width: ${em(576)})`)
     const imgs = [mobile1, mobile2, mobile3, mobile4]
     const [pic, setPic] = useState(mobile)
     const [selected, setSelected] = useState(0)
@@ -49,24 +51,26 @@ const ProductDetails = () => {
     ));
     return (
         <Paper p="xl">
-            <Breadcrumbs separator="→" mt="xs">{items}</Breadcrumbs>
+            {!isExtraSmall && <Breadcrumbs separator="→" mt="xs">{items}</Breadcrumbs>}
             <Flex w="100%" direction={isMedium ? "column" : ""} justify="space-between" gap="xl">
-                <Card w={isMedium ? "70%" : isSmall ? "100%" : "30%"} mx="xl">
+                <Card w={isSmall ? "100%" : isMedium ? "70%" : "30%"}>
                     <Image src={pic}/>
-                    <Flex gap={12} justify="space-between" my="lg" h="100px">
-                        {imgs.map((img, index) => {
-                            return (
-                                <Card withBorder={selected === index} p={0} color="blue">
-                                    <Avatar onClick={() => {
-                                        setPic(img)
-                                        setSelected(index)
-                                    }} style={{border: "1px blue", borderBlock: "blue"}}
-                                            key={index} src={img} h="100%"
-                                            w="100px" radius="xs"/>
-                                </Card>
-                            )
-                        })}
-                    </Flex>
+                    <ScrollArea>
+                        <Flex gap={12} justify="space-between" my="lg" h="100px">
+                            {imgs.map((img, index) => {
+                                return (
+                                    <Card withBorder={selected === index} p={0} color="blue">
+                                        <Avatar onClick={() => {
+                                            setPic(img)
+                                            setSelected(index)
+                                        }} style={{border: "1px blue", borderBlock: "blue"}}
+                                                key={index} src={img} h="100%"
+                                                w="100px" radius="xs"/>
+                                    </Card>
+                                )
+                            })}
+                        </Flex>
+                    </ScrollArea>
                 </Card>
                 <Flex direction="column" py="xl" h="100%" gap="lg" w={isMedium ? "100%" : "50%"} mx="xl">
                     <Text fw={700}>iPhone 14 Pro Max 256GB Deep Purple 5G - Middle East Version</Text>

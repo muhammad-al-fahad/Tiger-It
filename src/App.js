@@ -5,7 +5,6 @@ import Welcome from "./Components/Welcome/welcome";
 import ConfirmPass from "./Components/ConfirmPass/ConfirmPass";
 import FirstName from "./Components/FirstName/FirstName";
 import ForgetPassword from "./Components/ForgetPassword/ForgetPassword";
-import Navbar from "./Components/Navbar/Navbar";
 import Personalinfo from "./Components/Personalinfo/Personalinfo";
 import SignIn from "./Components/signin/SignIn";
 import TigerOtp from "./Components/TigerOtp/TigerOtp";
@@ -17,7 +16,7 @@ function App() {
     return (
         <>
             <Router>
-                <Navbar/>
+                {/*<Navbar/>*/}
                 <Routes>
                     <Route path="/" element={<Welcome/>}/>
                     <Route path="/signup/firstname" element={<FirstName/>}/>
