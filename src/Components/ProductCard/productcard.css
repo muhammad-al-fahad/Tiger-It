@@ -122,3 +122,90 @@
   line-height: 24px;
   word-wrap: break-word;
 }
+
+@media screen and (max-width: 1350px){
+  .product-image {
+    padding-inline: 30px;
+  }
+}
+
+@media screen and (max-width: 1275px){
+  .product-image {
+    padding-inline: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .product-image {
+    padding-inline: 0;
+  }
+
+  .p-3 {
+    padding: 0rem!important;
+  }
+
+  .offer-badge {
+    right: 8px;
+  }
+}
+
+@media screen and (max-width: 780px){
+  .offer-badge {
+    right: 5px;
+  }
+
+  .product-image {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .offer-badge {
+    right: 15px;
+  }
+
+  .product-image {
+    width: initial;
+    padding-inline: 50px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .offer-badge {
+    right: 16px;
+  }
+
+  .product-image {
+    padding-inline: 30px;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .offer-badge {
+    right: 10px;
+  }
+
+  .product-image {
+    padding-inline: 5px;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .offer-badge {
+    right: 5px;
+  }
+
+  .product-image {
+    padding-inline: 0;
+  }
+}
+
+@media screen and (max-width: 440px){
+  .offer-badge {
+    right: 16px;
+  }
+
+  .product-image {
+    padding-inline: 15px;
+  }
+}

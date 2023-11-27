@@ -3,8 +3,8 @@ import "./productcard.css";
 function ProductCard() {
   return (
     <>
-      <div className="col-6 col-sm-4 col-md-3">
-        <div className="card p-3 border-0 ">
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div className="card pb-3 border-0 ">
           <div className="card-container">
             <div className="product-image-container">
               <img

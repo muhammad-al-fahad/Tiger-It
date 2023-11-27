@@ -90,3 +90,13 @@
     width: 20px;
     height: 20px;
 }
+
+@media screen and (max-width: 440px){
+    .product-section {
+      padding: 40px;
+    }
+
+    .product-content {
+        gap: 16px;
+    }
+}
