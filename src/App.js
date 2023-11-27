@@ -10,6 +10,7 @@ import Personalinfo from "./Components/Personalinfo/Personalinfo";
 import SignIn from "./Components/signin/SignIn";
 import TigerOtp from "./Components/TigerOtp/TigerOtp";
 import Home from "./Components/Home/Home";
+import SellerShop from "./Components/SellerShop/SellerShop";
 import ProductDetails from "./Components/productDetails/ProductDetails";
 
 function App() {
@@ -29,8 +30,8 @@ function App() {
                     <Route path="/check/email" element={<Validation/>}/>
                     <Route path="/message" element={<Message/>}/>
                     <Route path="/home" element={<Home/>}/>
+                    <Route path="/seller-shop" element={<SellerShop/>}/>
                     <Route path="/product-details" element={<ProductDetails/>}/>
-
                 </Routes>
             </Router>
         </>
