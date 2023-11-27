@@ -1,0 +1,95 @@
+.hero-section {
+    height: 500px;
+    background-color: #053225;
+    padding-inline: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.hero-section .hero-background {
+    width: 397px;
+    height: 100%;
+    align-self: center;
+    display: flex;
+}
+
+.hero-section .hero-background > img {
+    width: 100%;
+}
+
+.hero-section .hero-content {
+    width: 610px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-content .hero-title {
+    color: white;
+    font-size: 48px;
+    font-family: 'Manrope';
+    font-weight: 800;
+    line-height: 60.28px;
+    word-wrap: break-word;
+}
+
+.hero-content .hero-dsc {
+    color: white;
+    font-size: 18px;
+    font-family: 'Manrope';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.hero-content .hero-button {
+    width: 120px;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 1px #62BE12 solid;
+    background-color: #62BE12;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    .hero-section .hero-background {
+        width: 397px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section .hero-background {
+        width: 560px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero-section .hero-content {
+        z-index: 1;
+    }
+
+    .hero-section .hero-background {
+        position: absolute;
+        left: 0rem;
+        opacity: 0.3;
+        width: 100%;
+        height: 60%;
+
+        display: flex;
+        align-self: center;
+    }
+    
+    .hero-section .hero-background > img {
+        width: 95%;
+    }
+}

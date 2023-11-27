@@ -35,3 +35,42 @@ font-weight: 700;
 /* text-transform: capitalize; */
 
 }
+
+.navbar .form-label {
+    height: 30px;
+}
+
+.navbar .form-select {
+    background-color: transparent;
+    outline: none;
+    background-position: right 0.75rem top 0.5rem;
+    border: none;
+    margin-left: 0;
+    margin-top: 0rem;
+    padding-left: 0;
+    padding-top: 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.navbar .form-control {
+    width: 555px;
+    height: 56px;
+}
+
+.navbar div.d-flex .form-select {
+    padding-bottom: 0;
+    margin-left: 0.5rem;
+    padding-left: 0.2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-position: right 0.75rem top 0.75rem;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.navbar form .position-absolute {
+    top: 35%;
+    right: 1.5rem;
+    cursor: pointer;
+}
