@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
+    Anchor,
     Avatar,
     Badge,
     Box,
+    Breadcrumbs,
     Button,
     Card,
     Divider,
+    em,
     Flex,
     Grid,
     Group,
@@ -19,18 +22,53 @@ import {
 } from "@mantine/core";
 import mobilePics from "../../assets/Frame 1000001047.png"
 import mobile from "../../assets/Rectangle 24.png"
+import mobile1 from "../../assets/img1.png"
+import mobile2 from "../../assets/img2.png"
+import mobile3 from "../../assets/img3.png"
+import mobile4 from "../../assets/img4.png"
 import Specification from "./Specification";
 import {IconDiscountCheckFilled} from "@tabler/icons-react";
 import MobilePhoneInfoCard from "./MobilePhoneInfoCard";
+import {useMediaQuery} from "@mantine/hooks";
+
 
 const ProductDetails = () => {
+    const isMedium = useMediaQuery(`(max-width: ${em(992)})`)
+    const isSmall = useMediaQuery(`(max-width: ${em(768)})`)
+    const imgs = [mobile1, mobile2, mobile3, mobile4]
+    const [pic, setPic] = useState(mobile)
+    const [selected, setSelected] = useState(0)
+    const items = [
+        {title: 'Mobile', href: '#'},
+        {title: 'Apple', href: '#'},
+        {title: 'iPhone 14 Pro Max 256GB Deep Purple ', href: '#'},
+    ].map((item, index) => (
+        <Anchor href={item.href} key={index}>
+            {item.title}
+        </Anchor>
+    ));
     return (
         <Paper p="xl">
-            <Flex w="100%" justify="space-between" gap="xl">
-                <Card h="70vh" w="30%" mx="xl">
-                    <Image src={mobile}/>
+            <Breadcrumbs separator="→" mt="xs">{items}</Breadcrumbs>
+            <Flex w="100%" direction={isMedium ? "column" : ""} justify="space-between" gap="xl">
+                <Card w={isMedium ? "70%" : isSmall ? "100%" : "30%"} mx="xl">
+                    <Image src={pic}/>
+                    <Flex gap={12} justify="space-between" my="lg" h="100px">
+                        {imgs.map((img, index) => {
+                            return (
+                                <Card withBorder={selected === index} p={0} color="blue">
+                                    <Avatar onClick={() => {
+                                        setPic(img)
+                                        setSelected(index)
+                                    }} style={{border: "1px blue", borderBlock: "blue"}}
+                                            key={index} src={img} h="100%"
+                                            w="100px" radius="xs"/>
+                                </Card>
+                            )
+                        })}
+                    </Flex>
                 </Card>
-                <Flex direction="column" py="xl" h="100%" gap="lg" w="50%" mx="xl">
+                <Flex direction="column" py="xl" h="100%" gap="lg" w={isMedium ? "100%" : "50%"} mx="xl">
                     <Text fw={700}>iPhone 14 Pro Max 256GB Deep Purple 5G - Middle East Version</Text>
                     <Group>
                         <span>4.5</span>
@@ -45,10 +83,11 @@ const ProductDetails = () => {
                     <Text>Color black</Text>
                     <Image src={mobilePics} w={300}/>
                     <Text>Internal Memory</Text>
-                    <SegmentedControl color="#62BE12" data={['128 GB', '256 GB', '512 Gb']} w="50%"/>
-                    <Flex my="lg" w="50%" justify="space-between">
-                        <Button color="#62BE12" w="40%">Buy Now</Button>
-                        <Button color="#62BE12" w="40%" variant="outline">Add To Cart</Button>
+                    <SegmentedControl color="#62BE12" data={['128 GB', '256 GB', '512 Gb']}
+                                      w={isSmall ? "80%" : "50%"}/>
+                    <Flex my="lg" w={isSmall ? "80%" : "50%"} justify="space-between">
+                        <Button color="#62BE12" w={isSmall ? "50%" : "40%"}>Buy Now</Button>
+                        <Button color="#62BE12" w={isSmall ? "50%" : "40%"} variant="outline">Add To Cart</Button>
                     </Flex>
                 </Flex>
             </Flex>
@@ -73,7 +112,7 @@ const ProductDetails = () => {
             <Divider/>
             <Flex w="100%" my="lg" direction="column" gap="xl">
                 <span style={{color: "#767C8C"}}>Ratings & Reviews</span>
-                <Flex justify="space-between">
+                <Flex justify="space-between" gap={isSmall ? "lg" : ""} direction={isSmall ? "column" : ""}>
                     <Flex w="200px" direction="column" gap="lg">
                         <Flex gap="xl">
                             <Badge variant="light" color="gray" size="lg">4.5/5</Badge>
