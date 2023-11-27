@@ -11,12 +11,12 @@ import SignIn from "./Components/signin/SignIn";
 import Otp from "./Components/Otp/Otp";
 import TigerOtp from "./Components/TigerOtp/TigerOtp";
 import Home from "./Components/Home/Home";
+import SellerShop from "./Components/SellerShop/SellerShop";
 
 function App() {
   return (
     <>
       <Router>
-      
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/signup/firstname" element={<FirstName />} />
@@ -25,11 +25,10 @@ function App() {
           <Route path="/signup/user/info" element={<Personalinfo />} />
           <Route path="/forgetpassword" element={<ForgetPassword />} />
           <Route path="/otp" element={<TigerOtp />} />
-          
-            <Route path="/check/email" element={<Validation />} />
-            <Route path="/message" element={<Message />} />
-            <Route path="/home" element={<Home />} />
-          
+          <Route path="/check/email" element={<Validation />} />
+          <Route path="/message" element={<Message />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/seller-shop" element={<SellerShop />} />
         </Routes>
       </Router>
     </>
