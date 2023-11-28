@@ -1,0 +1,140 @@
+.cart .cart-steppers {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cart .cart-steppers .steppers-area {
+    width: 755px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cart .cart-steppers .steppers-area .cart-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart .cart-steppers .steppers-area .cart-delivery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart .cart-steppers .steppers-area .cart-payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-title {
+    font-size: 13px;
+    font-weight: 700;
+    transform: translateY(10px);
+}
+
+.delivery-title, .payment-title {
+    font-size: 13px;
+    color: #767C8C;
+    transform: translateY(8px);
+}
+
+.cart .cart-steppers .cart-dash {
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart .cart-steppers .cart-dash .dash-line {
+    width: 100px;
+    height: 2px;
+    background: #EBEDF0;
+}
+
+.cart-form-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cart .cart-form {
+    width: 755px;
+    height: 300px;
+    background: white;
+    padding: 32px;
+
+    align-self: flex-end;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.cart-form .form-select {
+    width: 100px;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.cart-country-number {
+    gap: 16px;
+}
+
+.cart-buttons {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 20px;
+}
+
+.cart-buttons .continue {
+    width: 189px;
+    height: 100%;
+    padding-inline: 16px;
+    background: #62BE12;
+    border-radius: 8px;
+    border: 1px #62BE12 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.cart-buttons .cancel {
+    width: 189px;
+    height: 100%;
+    padding-inline: 16px;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px #62BE12 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    color: #62BE12;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: 700;
+    word-wrap: break-word;
+}

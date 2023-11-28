@@ -12,6 +12,7 @@ import Otp from "./Components/Otp/Otp";
 import TigerOtp from "./Components/TigerOtp/TigerOtp";
 import Home from "./Components/Home/Home";
 import SellerShop from "./Components/SellerShop/SellerShop";
+import Cart from "./Components/Cart/Cart";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/message" element={<Message />} />
           <Route path="/home" element={<Home />} />
           <Route path="/seller-shop" element={<SellerShop />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </Router>
     </>
