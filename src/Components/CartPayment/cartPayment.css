@@ -177,3 +177,9 @@
     border-color: #62BE12;
     box-shadow: none;
 }
+
+.cart-payment .mb-3 {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1.80px #EBEDF0 solid;
+}

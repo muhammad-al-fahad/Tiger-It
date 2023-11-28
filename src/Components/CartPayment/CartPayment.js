@@ -32,7 +32,7 @@ function Cart() {
 
             <div className="cart-form-area w-100">
               <form className="cart-form ms-5">
-                <div class="mb-5">
+                <div class="mb-3">
                   <div class="form-check d-flex justify-content-between">
                     <label class="form-check-label" for="flexRadioDefault1">
                       <img src="/assets/images/Wad Of Money.svg" alt="" />
@@ -47,7 +47,7 @@ function Cart() {
                   </div>
                 </div>
 
-                <div class="mb-5">
+                <div class="mb-3">
                   <div class="form-check d-flex justify-content-between">
                     <label class="form-check-label" for="flexRadioDefault1">
                       <img src="/assets/images/Card.svg" alt="" />
@@ -62,7 +62,7 @@ function Cart() {
                   </div>
                 </div>
 
-                <div class="mb-5">
+                <div class="mb-3">
                   <div class="form-check d-flex justify-content-between">
                     <label class="form-check-label" for="flexRadioDefault1">
                       <img src="/assets/images/bank.svg" alt="" />
