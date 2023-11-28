@@ -10,32 +10,29 @@ import Personalinfo from "./Components/Personalinfo/Personalinfo";
 import SignIn from "./Components/signin/SignIn";
 import TigerOtp from "./Components/TigerOtp/TigerOtp";
 import Home from "./Components/Home/Home";
+import SellerShop from "./Components/SellerShop/SellerShop";
+import Cart from "./Components/Cart/Cart";
 import ProductDetails from "./Components/productDetails/ProductDetails";
 
 function App() {
-
-    return (
-        <>
-            <Router>
-                <Navbar/>
-                <Routes>
-                    <Route path="/" element={<Welcome/>}/>
-                    <Route path="/signup/firstname" element={<FirstName/>}/>
-                    <Route path="/signup/confirmpassword" element={<ConfirmPass/>}/>
-                    <Route path="/login" element={<SignIn/>}/>
-                    <Route path="/signup/user/info" element={<Personalinfo/>}/>
-                    <Route path="/forgetpassword" element={<ForgetPassword/>}/>
-                    <Route path="/otp" element={<TigerOtp/>}/>
-
-                    <Route path="/check/email" element={<Validation/>}/>
-                    <Route path="/message" element={<Message/>}/>
-                    <Route path="/home" element={<Home/>}/>
-                    <Route path="/product-details" element={<ProductDetails/>}/>
-
-                </Routes>
-            </Router>
-        </>
-    );
-}
-
-export default App;
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/signup/firstname" element={<FirstName />} />
+          <Route path="/signup/confirmpassword" element={<ConfirmPass />} />
+          <Route path="/login" element={<SignIn />} />
+          <Route path="/signup/user/info" element={<Personalinfo />} />
+          <Route path="/forgetpassword" element={<ForgetPassword />} />
+          <Route path="/otp" element={<TigerOtp />} />
+          <Route path="/check/email" element={<Validation />} />
+          <Route path="/message" element={<Message />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/seller-shop" element={<SellerShop />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/product-details" element={<ProductDetails/>}/>
+        </Routes>
+      </Router>
+    </>
+  );
