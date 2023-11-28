@@ -11,8 +11,10 @@ import SignIn from "./Components/signin/SignIn";
 import TigerOtp from "./Components/TigerOtp/TigerOtp";
 import Home from "./Components/Home/Home";
 import SellerShop from "./Components/SellerShop/SellerShop";
-import Cart from "./Components/Cart/Cart";
+import CartContact from "./Components/CartContact/CartContact";
 import ProductDetails from "./Components/productDetails/ProductDetails";
+import CartDelivery from "./Components/CartDelivery/CartDelivery";
+import CartPayment from "./Components/CartPayment/CartPayment";
 
 function App() {
   return (
@@ -29,10 +31,15 @@ function App() {
           <Route path="/check/email" element={<Validation />} />
           <Route path="/message" element={<Message />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/seller-shop" element={<SellerShop />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/product-details" element={<ProductDetails/>}/>
+          <Route path="/seller-shop/:id" element={<SellerShop />} />
+          <Route path="/cart-contact" element={<CartContact />} />
+          <Route path="/cart-delivery" element={<CartDelivery />} />
+          <Route path="/cart-payment" element={<CartPayment />} />
+          <Route path="/product-details/:id" element={<ProductDetails/>}/>
         </Routes>
       </Router>
     </>
   );
+}
+
+export default App;

@@ -22,9 +22,13 @@ import mobile from "../../assets/Rectangle 24.png"
 import Specification from "./Specification";
 import {IconDiscountCheckFilled} from "@tabler/icons-react";
 import MobilePhoneInfoCard from "./MobilePhoneInfoCard";
+import {useParams} from 'react-router-dom'
 
 const ProductDetails = () => {
+    const {id} = useParams();
     return (
+        <>
+        { id &&
         <Paper p="xl">
             <Flex w="100%" justify="space-between" gap="xl">
                 <Card h="70vh" w="30%" mx="xl">
@@ -129,6 +133,8 @@ const ProductDetails = () => {
                 })}
             </Grid>
         </Paper>
+        }
+        </>
     );
 };
 
