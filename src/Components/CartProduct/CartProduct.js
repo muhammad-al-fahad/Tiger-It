@@ -1,10 +1,10 @@
-import React from 'react'
+import './cartProduct.css'
 
 function CartProduct() {
   return (
     <>
         <section className='cart-product'>
-            <img src="" alt="" />
+            <img src="/assets/images/iphone.png" alt="" />
             <div className="cart-product-detail">
                 <p className='cart-product-title'>iPhone 14 Pro Max 256GB Deep Purple</p>
                 <div className="cart-product-price">

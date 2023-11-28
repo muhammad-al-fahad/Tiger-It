@@ -1,9 +1,12 @@
 import "./sellerShop.css";
 import ProductCard from "../ProductCard/ProductCard";
+import {useParams} from 'react-router-dom'
 
 function SellerShop() {
+  const {id} = useParams();
   return (
     <>
+    { id && <>
       <section className="seller-shop">
         <div className="seller-shop-profile">
           <img src="/assets/images/Avatar.png" alt="" />
@@ -82,6 +85,8 @@ function SellerShop() {
           </div>
         </div>
       </section>
+      </>
+      }
     </>
   );
 }
