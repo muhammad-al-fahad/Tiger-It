@@ -15,6 +15,8 @@ import CartContact from "./Components/CartContact/CartContact";
 import ProductDetails from "./Components/productDetails/ProductDetails";
 import CartDelivery from "./Components/CartDelivery/CartDelivery";
 import CartPayment from "./Components/CartPayment/CartPayment";
+import OrderProgress from './Components/OrderProgress/OrderProgress';
+import Recipt from './Components/Recipt/Recipt'
 
 function App() {
   return (
@@ -35,7 +37,9 @@ function App() {
           <Route path="/cart-contact" element={<CartContact />} />
           <Route path="/cart-delivery" element={<CartDelivery />} />
           <Route path="/cart-payment" element={<CartPayment />} />
-          <Route path="/product-details/:id" element={<ProductDetails/>}/>
+          <Route path="/product-details/:id" element={<ProductDetails />} />
+          <Route path="/order-progress" element={<OrderProgress />} />
+          <Route path="/recipt" element={<Recipt />} />
         </Routes>
       </Router>
     </>

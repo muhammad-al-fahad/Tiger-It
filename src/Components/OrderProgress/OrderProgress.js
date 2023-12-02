@@ -1,11 +1,10 @@
 import CartProduct from "../CartProduct/CartProduct";
-import "./cartPayment.css";
-import {Link} from 'react-router-dom'
+import "./orderProgress.css";
 
 function Cart() {
   return (
     <>
-      <section className="container-fluid cart-payment">
+      <section className="container-fluid order-progress">
         <div className="row col">
           <div className="col-12 col-sm-12 col-md-6 col-lg-8">
             <div className="cart-steppers my-5">
@@ -25,71 +24,30 @@ function Cart() {
                   <div className="dash-line"></div>
                 </div>
                 <div className="cart-step">
-                  <img src="/assets/images/Icon.svg" alt="Icon" />
+                  <img src="/assets/images/check.svg" alt="Icon" />
                   <p className="payment-title">Payment Method</p>
                 </div>
               </div>
             </div>
 
             <div className="cart-form-area w-100">
-              <form className="cart-form ms-5">
-                <div class="mb-3">
-                  <label class="form-check d-flex justify-content-between">
-                    <div class="form-check-label" for="flexRadioDefault1">
-                      <img src="/assets/images/Wad Of Money.svg" alt="" />
-                      <p>Cash on Delivery</p>
+                <div className="cart-form">
+                    <div className="cart-form-order">
+                        <img src="/assets/images/Group 3954.svg" alt="" />
+                        <div className="order-content">
+                            <p>Order in Progress</p>
+                            <p>Thank you for your purchase! We're now working to fulfill your order.</p>
+                        </div>
                     </div>
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault1"
-                    />
-                  </label>
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-check d-flex justify-content-between">
-                    <div class="form-check-label" for="flexRadioDefault1">
-                      <img src="/assets/images/Card.svg" alt="" />
-                      <p>Credit / Debit Card</p>
+                    <div className="cart-buttons">
+                    <button type="button" className="continue">
+                            Continue Shopping
+                        </button>
+                        <button type="button" className="cancel">
+                            View Recipt
+                        </button>
                     </div>
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault1"
-                    />
-                  </label>
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-check d-flex justify-content-between">
-                    <div class="form-check-label" for="flexRadioDefault1">
-                      <img src="/assets/images/bank.svg" alt="" />
-                      <p>Bank Transfer</p>
-                    </div>
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="flexRadioDefault1"
-                    />
-                  </label>
-                </div>
-                
-              </form>
-            </div>
-
-            <div className="cart-buttons">
-              <button type="button" className="cancel">
-                Cancel
-              </button>
-              <Link to="/order-progress" className="text-decoration-none">
-              <button type="button" className="continue">
-                Continue
-              </button>
-              </Link>
+                </div>  
             </div>
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-4">

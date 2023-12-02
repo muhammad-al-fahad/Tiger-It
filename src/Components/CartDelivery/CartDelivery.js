@@ -67,6 +67,15 @@ function Cart() {
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                 </div>
+                <div className="cart-form-notes">
+                  <div className="notes-area">
+                    <div className="notes-content">
+                      <img src="/assets/images/Notes.svg" alt="" />
+                      <p>Add Pickup Notes</p>
+                    </div>
+                    <img src="/assets/images/chevron-right.svg" alt="" />
+                  </div>
+                </div>
               </form>
             </div>
 
